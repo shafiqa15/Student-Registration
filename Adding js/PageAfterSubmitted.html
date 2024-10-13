@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1 id="welcome-message" style="color: black;">Welcome!</h1>
+    <div>
+        <label><input type="radio" name="color" value="red" /> Red</label>
+        <label><input type="radio" name="color" value="blue" /> Blue</label>
+        <label><input type="radio" name="color" value="green" /> Green</label>
+        <label><input type="radio" name="color" value="orange" /> Orange</label>
+    </div>
+</div>
+
+<script>
+ 
+    function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            firstName: params.get('firstName'),
+            lastName: params.get('lastName')
+        };
+    }
+
+ 
+    const { firstName, lastName } = getUrlParams();
+    const welcomeMessage = document.getElementById('welcome-message');
+    if (firstName && lastName) {
+        welcomeMessage.textContent = `Welcome ${firstName} ${lastName}!`;
+    }
+
+ 
+    const radioButtons = document.querySelectorAll('input[name="color"]');
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            welcomeMessage.style.color = event.target.value;
+        });
+    });
+</script>
+
+</body>
+</html>
