@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/3.8.0/react-datepicker.css">
+</head>
+<style>
+    .custom-bg {
+        background-color: #d1ecf1; 
+        color: #000;
+    }
+</style>
+<body>
+    <div class="text-center my-4">
+        <h1 class="display-4">Welcome to the Student Registration Form!</h1>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center vh-200 custom-bg">
+        <div class="col-md-6 mx-auto color:red">
+            <div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-10">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" name="firstName" placeholder="Your First Name" required>
+                        </div>
+                        <div class="form-group col-12 col-md-10">
+                            <label for="secondName">Second Name</label>
+                            <input type="text" class="form-control" name="secondName" placeholder="Your Second Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-10">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group col-12 col-md-10">
+                            <label for="mobile">Mobile</label>
+                            <input type="text" class="form-control" name="mobile" placeholder="Your Mobile Number" required>
+                        </div>
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Gender</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob" placeholder="Select a date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" name="address" rows="3" placeholder="Your Address"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city" placeholder="Your City">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="pin">Pin</label>
+                            <input type="text" class="form-control" name="pin" placeholder="Your Pin Code">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qualifications">Select Qualifications:</label>
+                        <select class="form-control">
+                            <option value="" disabled selected>Select Qualifications</option>
+                    <option value="HS">High School Diploma</option>
+                    <option value="AD">Associate Degree</option>
+                    <option value="BD">Bachelor’s Degree</option>
+                    <option value="MD">Master’s Degree</option>
+                    <option value="PhD">Doctorate (PhD)</option>
+                    <option value="Other">Other (specify)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Specialization</label>
+                        <div class="form-check">
+                            <input type="checkbox" name="specialization" class="form-check-input">
+                            <label class="form-check-label">Computer Science</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="specialization" class="form-check-input">
+                            <label class="form-check-label">Information Technology</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="specialization" class="form-check-input">
+                            <label class="form-check-label">Computer Architecture</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="specialization" class="form-check-input">
+                            <label class="form-check-label">Telecommunication</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="align-items-center d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-block">REGISTER</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
