@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="/Users/shafiqaabdat/Desktop/stu reg/Styles/StudentRegestration.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div>
+    <div class="welcome_heading">
+        <h1>Welcome to Student Registration Form!</h1>
+    </div>
+
+    <div class="Regestration-container">
+        <form class="form_register">
+
+            <div class="name-input-container">
+                <label for="firstName">First Name</label>
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Your First Name"
+                  
+                />
+            </div>
+
+            <div class="name-input-container">
+                <label for="secondName">Second Name</label>
+                <input
+                    type="text"
+                    id="secondName"
+                    name="secondName"
+                    placeholder="Your Second Name"
+    
+                />
+            </div>
+
+            <div class="name-input-container">
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                  
+                />
+            </div>
+
+            <div class="name-input-container">
+                <label for="mobile">Mobile</label>
+                <input
+                    type="text"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Your Mobile Number"
+                
+                />
+            </div>
+
+            <div class="radio">
+                <label for="gender">Gender</label>
+                <label><input type="radio" name="gender" value="male"/> Male</label>
+                <label><input type="radio" name="gender" value="female"/> Female</label>
+            </div>
+
+            <div class="date-picker-container">
+                <label for="dob">Date of Birth</label>
+                <div class="date-picker-icon-container">
+                    <i class="fas fa-calendar-alt" style="font-size: 16px; color: blue; z-index: 1;"></i>
+                    <input type="date" id="dob" name="dob" placeholder="Select a date" >
+                </div>
+            </div>
+
+            <label for="address" class="text_fileds_formm">Address :</label>
+            <div class="address_register">
+                <textarea id="address" name="address" rows="7" cols="112"></textarea>
+            </div>
+
+            <label for="city" class="text_fileds_formm">City:</label>
+            <div class="area_register">
+                <textarea id="city" name="city" rows="1" cols="112"></textarea>
+            </div>
+
+            <label for="pin" class="text_fileds_formm">Pin:</label>
+            <div class="area_pin">
+                <textarea id="pin" name="pin" rows="1" cols="112"></textarea>
+            </div>
+
+            <div class="select_qualifications">
+                <label for="qualifications">Select Qualifications:</label>
+                <select id="qualifications" name="qualifications">
+                    <option value="">Select Qualifications</option>
+                    <option value="HS">High School Diploma</option>
+                    <option value="AD">Associate Degree</option>
+                    <option value="BD">Bachelor’s Degree</option>
+                    <option value="MD">Master’s Degree</option>
+                    <option value="PhD">Doctorate (PhD)</option>
+                    <option value="Other">Other (specify)</option>
+                </select>
+            </div>
+
+            <div class="choose_specialization">
+                <label for="specialization">Specialization</label>
+                <label><input type="checkbox" name="specialization" value="CS"/> Computer Science</label><br />
+                <label><input type="checkbox" name="specialization" value="IT"/> Information Technology</label><br />
+                <label><input type="checkbox" name="specialization" value="CA"/> Computer Architecture</label><br />
+                <label><input type="checkbox" name="specialization" value="TC"/> Telecommunications</label>
+            </div>
+
+            <div class="password-input">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                />
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
+                <button type="submit" style="width: 15vh;">REGISTER</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
+
